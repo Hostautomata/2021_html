@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>홀수열/짝수열 구분</title>
+	<style>
+		table{width: 800px; margin: auto; text-align:center;}
+		th{background-color:black; color:white;}
+		#A table, th, td{border: 1px solid black; border-collapse: collapse;}
+		#A tr:nth-child(even){background-color:gray;}
+		#B tr:nth-child(odd){background-color:hotpink;}
+		#B table, th, td{border-spacing: 50px;}
+	</style>
+</head>
+<body>
+	<!--
+		td와 td사이의 간격 : border-spacing
+		td와 텍스트 사이의 간격 : padding
+	
+		tr:nth-child(even){} : 짝수열
+		tr:nth-child(odd){} : 홀수열
+		table이 여러개 일때 구분하기 위해서 id를 부여한다.
+	 -->>
+	<table id ="A">
+		<caption>ICT팬션 가격표</caption>
+		<tr><th>방이름</th><th>대상</th><th>크기</th><th>가격</th></tr>
+		<tr><td>유채방</td><td>여성</td><td>4인실</td><td>1인20000원</td></tr>
+		<tr><td>동백방</td><td>동성</td><td>4인실</td><td>1인20000원</td></tr>
+		<tr><td>동백방</td><td>동성</td><td>4인실</td><td>1인20000원</td></tr>
+		<tr><td>천혜향방</td><td>누구나</td><td>2인실</td><td>1인20000원</td></tr>
+	</table>
+	<hr>
+	<table id="B">
+		<caption>ICT팬션 가격표</caption>
+		<tr><th>방이름</th><th>대상</th><th>크기</th><th>가격</th></tr>
+		<tr><td>유채방</td><td>여성</td><td>4인실</td><td>1인20000원</td></tr>
+		<tr><td>동백방</td><td>동성</td><td>4인실</td><td>1인20000원</td></tr>
+		<tr><td>동백방</td><td>동성</td><td>4인실</td><td>1인20000원</td></tr>
+		<tr><td>천혜향방</td><td>누구나</td><td>2인실</td><td>1인20000원</td></tr>
+	</table>
+</body>
+</html>

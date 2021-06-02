@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Link(이동) : a 태그</title>
+<style>
+a{text-decoration: none;}
+</style>
+</head>
+<body>
+	<!-- <a href="url" target="value">link text</a>
+		href : url에 #을 쓰면 현재 문서를 의미함
+		target : blank(새창)
+				_self(default, 자기자신)
+				_parent(부모창)
+				name : 이름이 있는 장소로 이동
+				
+		링크색변경은 css
+		밑줄지우는 법 : style = "text-decoration: none;";
+	 -->
+	 
+	 <p><a href="https://www.naver.com">naver</a></p>
+	 <p><a href="https://www.daum.net">daum</a></p>
+	 <p><a href="https://www.google.com">google</a></p>
+	 <hr>
+
+	 <p><a href="https://www.naver.com" target = "blank">naver</a></p>
+	 <p><a href="https://www.daum.net" target = "blank">daum</a></p>
+	 <p><a href="https://www.google.com" target = "blank">google</a></p>
+	 <hr>
+	
+	<!-- 현재 가지고있는 문서 (상대주소) -->
+	 <p><a href="ex02_header.html">문서2</a></p>
+	 <p><a href="ex03_style.html">문서3</a></p>
+	 <p><a href="ex06_colors.html">문서6</a></p>
+	 <hr>
+	<!-- 현재 가지고있는 문서 (절대주소: 반드시 루트부터 시작) -->
+	 <p><a href="/01_HTML/day01_basic/ex01.html">문서1</a></p>
+	 <p><a href="/01_HTML/day01_basic/ex04_text_formating.html">문서4</a></p>
+	 <p><a href="/01_HTML/day01_basic/ex05_blockquote.html">문서5</a></p>
+	 <hr>
+
+	<!-- target = name -->
+	<h2>같은 페이지에서 다른 위치로 이동하기 (name)</h2>
+	<p><a href="#first">첫번째 달락</a></p>
+	<p><a href="#second">두번째 달락</a></p>
+	<p><a href="#third">세번째 달락</a></p>
+	<br><br><br><br><br>
+	<a name="first"><h3>첫번째 달락</h3></a>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p><a href="#"><h3>위로이동</h3></a>
+	
+	<a name="second"><h3>두번째 달락</h3></a>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p><a href="#"><h3>위로이동</h3></a>
+		
+	<a name="third"><h3>세번째 달락</h3></a>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p>
+	<p>.</p><p>.</p><p>.</p><p>.</p><a href="#"><h3>위로이동</h3></a>
+		
+	
+</body>
+</html>

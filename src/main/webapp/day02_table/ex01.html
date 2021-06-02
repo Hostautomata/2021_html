@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	table, th, td{
+		border: 1px solid skyblue;
+		border-collapse: collapse;
+	}
+	table{width:700px;}
+	/*각 cell마다 넓이를 지정할 수 있다.*/
+	th{width: 250px;}
+	/* td가운데 정렬*/
+	td{text-align:center;}
+	/* ****table가운데 정렬(div,table은 margin을 사용한다.)*/
+	table{margin: 0px auto;}
+	tr :nth-child(even){
+		background-color: red;
+	}
+</style>
+<meta charset="UTF-8">
+<title>테이블</title>
+</head>
+		<!-- 
+		 구조는 thead, tbody, tfoot 
+		 **만약 위 3가지를 다 사용하지 않으면 tbody에 사용한 것으로 간주
+		 **위치를 변경해서 사용해도 순서대로 정렬됨
+		 tr(행)안에 th(cell의 머리글 보통 thead안에 존재),td(일반적인cell에 사용)
+		 th는 글자가 굵고 가운데 정렬이 된다.
+		 table의 style을 지정하지 않으면 표 형태로 나타나지 않음 
+		 col로 시작하는 것들 : 열과 관련된 것 -->
+	<table>
+		<thead>
+			<tr><th>이름</th><th>나이</th><th>주소</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>둘리</td><td>24</td><td>남극</td></tr>
+			<tr><td>도우너</td><td>19</td><td>깐따삐아</td></tr>
+			<tr><td>희동이</td><td>3</td><td>서울</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td>홍길동</td><td>34</td><td>제주도</td></tr>
+		</tfoot>
+	</table>
+<body>
+
+</body>
+</html>

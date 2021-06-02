@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript</title>
+<script type="text/javascript">
+	/*javascript로 스타일 변경 가능 style.속성 */
+	/*속성을 변경할 때는 .속성= */
+	function p_off() {
+		document.getElementById("img1").src="../images/off.gif";
+	}
+	function p_on() {
+		document.getElementById("img1").src="../images/on.gif";		
+	}
+	function p_off2() {
+		document.getElementById("img2").src="../images/off.gif";
+	}
+	function p_on2() {
+		document.getElementById("img2").src="../images/on.gif";		
+	}
+	function test1() {
+		document.getElementById("d1").style.fontSize="25px";		
+		document.getElementById("d1").style.color="tomato";		
+		document.getElementById("d1").style.backgroundColor="yellow";		
+	}
+	function test2() {
+		document.getElementById("d1").style.removeProperty("color");			
+		document.getElementById("d1").style.removeProperty("background-color");			
+		document.getElementById("d1").style.removeProperty("font-size");			
+	}
+</script>
+</head>
+<body>
+	<!-- onmouseover/onmouseout: 해당 영역에 마우스가 있을때/밖에있을때 -->
+	<p><img id= "img1" alt=""src="../images/off.gif"></p>
+	<button onclick="p_off()" >끄기</button>
+	<button onclick="p_on()">켜기</button>
+	<hr>
+	<span onmouseover="p_on2()" onmouseout="p_off2()">
+	<img id= "img2" alt=""src="../images/off.gif"></span>
+	<hr>
+	
+	<!--  -->
+	<p id="d1" onmouseover="test1()" onmouseout="test2()">javascript를 이용한 style변경</p>
+	
+</body>
+</html>

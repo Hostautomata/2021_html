@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지맵</title>
+</head>
+<body>
+	
+
+	
+
+	<!-- 해당이미지에 uremap속성 부여(map태그에서 사용한 이름) -->
+	<img src="../images/workplace.jpg" alt="Workplace" usemap="#workmap">
+
+	<!-- 2. map태그에 이름 부여, area태그 사용해 영역지정 -->
+	<map name="workmap">
+		<!-- 영역지정 : rect:사각형, circle:원 poly:다각형 -->
+		<!-- rect : 시작x,y 끝 x,y -->
+		<area shape="rect" coords="34,44,270,350" alt="구글"
+			href="https://www.google.com">
+		<area shape="rect" coords="290,172,333,250" alt="네이버"
+			href="https://www.naver.com">
+		<!-- circle : 중심점x,y,반지름 -->
+		<area shape="circle" coords="337,300,44" alt="ex01"
+			href="ex01.html">
+	</map>
+</body>
+</html>

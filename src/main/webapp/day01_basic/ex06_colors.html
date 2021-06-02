@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>color</title>
+</head>
+<body>
+	<!-- HTML에서 색 표현
+	1. color names : 색상이름을 사용해서 색 지정
+	https://www.w3schools.com/css/css_colors.asp
+	 -->
+	 <!-- style 속성 : 배경색과 글자색,테두리 -->
+	 <p style="background-color: BlueViolet;">배경색</p>
+	 <p style="color: DarkCyan;">글자색</p>
+
+	 <p style="border: 2px tomato;">테두리에 선두께와 선 색을 지정함(색 표현X)</p>
+	 <p style="border: solid tomato;">테두리에 (선두께)선종류와 선 색을 지정함</p>
+	 <p style="border: tomato;">테두리에 선 색을 지정함(색 표현X)</p>
+	 <p style="border: 8px solid Gold;">테두리에 두께, 선종류(실선), 선 색을 지정함</p>
+	 <p style="border: 8px dotted Gold;">테두리에 두께, 선종류(점선), 선 색을 지정함</p>
+	 <p style="border: 8px dashed Gold;">테두리에 두께, 선종류(밖음질선), 선 색을 지정함</p>
+	 <p style="border: 8px double Gold;">테두리에 두께, 선종류(이중선), 선 색을 지정함</p>
+	 <hr>
+	 <!--  2. RGB(red,green,blue), RGBA(red,green,blue,alpha(투명도))
+	 		각 자리의 가중치를 0-255 숫자로 표현 -->
+	 <p style="background-color: rgb(255,0,0);">RGB 색상표현</p>
+	 <p style="background-color: rgb(0,255,0)">RGB 색상표현</p>
+	 <p style="background-color: rgb(0,0,255);">RGB 색상표현</p>
+	 <p style="background-color: rgb(0,0,0); color:rgb(255,255,255)">RGB 색상표현</p>
+	 <p style="background-color: rgb(255,255,255);">RGB 색상표현</p>
+	 <hr>
+	 <p style="background-color: rgba(255,0,0,0.0);">RGBA 색상표현</p>
+	 <p style="background-color: rgba(255,0,0,0.5);">RGBA 색상표현</p>
+	 <p style="background-color: rgba(255,0,0,1.0);">RGBA 색상표현</p>
+	 <p style="background-color: rgba(255,0,0);">RGBA 색상표현</p>
+	 <hr>
+	 <!-- 3.HEX(rr,gg,bb): 한자리에 표현가능한 수 : 16진수(0~9,A~F) -->
+	 <p style="background-color: #FFAABB;">HEXA 색상표현</p>
+	 <p style="background-color: #FF0000;">HEXA 색상표현</p>
+	 <p style="background-color: #00FF00;">HEXA 색상표현</p>
+	 <p style="background-color: #0000FF;">HEXA 색상표현</p>
+	 <p style="background-color: #F00;">HEXA 색상표현</p>
+	 <p style="background-color: #00F;">HEXA 색상표현</p>
+	 <p style="background-color: #0F0;">HEXA 색상표현</p>
+	 <!-- 투명도는 00~ff까지 -->
+	 <p style="background-color: #ffffffff">HEXA 색상표현</p>
+	 <p style="background-color: #0000FF88;">HEXA 색상표현</p>
+	 <p style="background-color: #0000FF00;">HEXA 색상표현</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>block and Inline</title>
+</head>
+<body>
+	<!-- block : 항상 세줄에서 시작해서 전체 너비를 차지한다.
+				<div>,<p>,<pre>,<h1>~<h6>,<table>,<ul>,<ol>,<li>,<hr>,
+				<header>,<section>,<nav>,<article>,<aside>,(html5구조=시엔태크=의미있는태그)
+				<form>,<fieldset>
+		inline: 필요한 만큼 너비를 차지한다.
+				<span>,<a>,<br>,<img>,<button>,<<b>,<i>,<strong>,<sub>,<sup>,
+				<input>,<script>,<select>			
+	 -->
+	 <!--  div : 다른 요소(Element=태그)를 포함하고 있는 container 역할을 한다.
+	 		
+	  -->
+	<div style="border : 1px solid green;">대표적인 블록레벨</div>
+	<span style="border : 1px solid green;">대표적인 인라인 레벨</span>
+	<div style="background-color: pink; color: white; padding:10px; text-align: center;">
+		<h2>여기는 div안입니다.</h2>
+		<p>
+			이처럼 차박에 대한 관심이 증대되면서, 자동차를 선택하는 소비자의
+			 기준에도 변화가 생겼다. 특히 뒷좌석을 평탄하게 만들 수 있는 
+		</p>
+		<p>
+			 ‘풀플랫 시트’ 적용 여부가 중요한 요소로 부각되고 있다. 그래서 
+			 오늘은 차박에 유용한 풀플랫 시트를 탑재한 현대차 모델을 간단히 소개하고자 한다.
+		</p>
+	</div>
+	<div style="width:500px; background-color: lightgreen; color: white; padding:10px; text-align: center;  margin: auto;margin-top: 10px;">
+		<h2>여기는 div안입니다.</h2>
+		<p>
+			이처럼 차박에 대한 관심이 증대되면서, 자동차를 선택하는 소비자의
+			 기준에도 변화가 생겼다. 특히 뒷좌석을 평탄하게 만들 수 있는 
+		</p>
+		<p>
+			 ‘풀플랫 시트’ 적용 여부가 중요한 요소로 부각되고 있다. 그래서 
+			 오늘은 차박에 유용한 풀플랫 시트를 탑재한 현대차 모델을 간단히 소개하고자 한다.
+		</p>
+	</div>
+	<div style="width:500px; background-color: lightgray; color: white; padding:10px; text-align: center; margin-top: 10px; margin: auto;">
+		<h2>여기는 div안입니다.</h2>
+		<img src="../images/workplace.jpg" alt="워크스페이스">
+	</div>
+	
+		<img src="../images/workplace.jpg"alt = "워크스페이스" style="margin-left: 40%;">
+</body>
+</html>

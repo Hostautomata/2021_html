@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Link(이동) : a태그</title>
+
+	<style type = "text/css">
+		a:link{color:pink}
+		a:link{color:lime}
+		a:active{color:darkgray}
+		a:hover{background-color:cyan}
+		a{text-decoration: none;}
+	</style>
+</head>
+<body>
+	<!-- email링크 : mailto : 이메일주소 -->
+	<a href="mailto:automata1001@gmail.com">개발자에게 문의</a>
+	<br><br>
+	
+	<!-- button태그의 링크 onclick속성을 이용
+		on~~속성일 경우 무조건 javascript를 사용하자. -->
+	<button onclick="document.location='ex01.html'">문서1</button>
+	<!-- 링크 색변경
+	방문전 - a:link {원하는 색}
+	방문후 - a:visited {원하는 색}
+	활성화 시 - a:active {원하는 색}
+	마우스 올렸을 때 - a:hover {원하는 색}
+	 -->
+	 <hr>
+	<a href="#">현재문서</a>
+</body>
+</html>
